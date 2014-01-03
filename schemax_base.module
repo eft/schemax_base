@@ -1,4 +1,10 @@
 <?php
+/**
+ * @file
+ * Code for the Schemax Base feature.
+ */
+
+include_once 'schemax_base.features.inc';
 
 /**
  * @file
