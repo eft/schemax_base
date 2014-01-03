@@ -1,5 +1,33 @@
 <?php
+
 /**
  * @file
  * Drupal needs this blank file.
  */
+function schemax_base_entity_info_alter(&$entity_info) {
+  $entity_info['fieldable_panels_pane']['bundles']['schemax_base_featured_content'] = array(
+    'label' => t('Featured Content'),
+    'pane category' => t('Fielded panes'),
+    'pane top level' => FALSE, // set to true to make this show as a top level icon
+    'pane icon' => '/sites/all/themes/schemax_omega/logo.png',
+    'admin' => array(
+      'path' => 'admin/structure/fieldable-panels-panes/manage/%fieldable_panels_panes_type',
+      'bundle argument' => 4,
+      // Note that this has all _ replaced with - from the bundle name.
+      'real path' => 'admin/structure/fieldable-panels-panes/manage/schemax-base-featured-content',
+      'access arguments' => array('administer fieldable panels panes'),
+    ),
+  );
+}
+
+/**
+* Implements hook_preprocess_field().
+*/
+function schemax_base_preprocess_field(&$vars) {
+  if ($vars['element']['#field_name'] == 'field_image'
+      && $vars['element']['#bundle'] == 'fieldable_panels_pane'
+      && $vars['element']['#view_mode'] == 'featured_content')
+    {
+      $vars['classes_array'][] = 'fpp_featured_content';
+    }
+}
