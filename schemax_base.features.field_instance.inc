@@ -125,10 +125,10 @@ function schemax_base_field_default_field_instances() {
         'label' => 'above',
         'module' => 'picture',
         'settings' => array(
-          'colorbox' => 'schemax_omega',
+          'colorbox' => 'schemax_group',
           'fallback_image_style' => '',
           'image_link' => 'content',
-          'picture_group' => 'schemax_omega',
+          'picture_group' => 'schemax_group',
         ),
         'type' => 'picture',
         'weight' => 0,

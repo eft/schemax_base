@@ -246,7 +246,7 @@ function schemax_base_default_page_manager_pages() {
     $pane->pid = 'new-1';
     $pane->panel = 'middle';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:dbcc5ba5-d30e-48a2-a3b4-3c290cb6974a';
+    $pane->subtype = 'uuid:6ec4fa37-d532-437a-9b23-613c9e0feb7f';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
