@@ -48,6 +48,7 @@ features[variable][] = jquery_update_jquery_version
 features[variable][] = node_options_page
 features[variable][] = node_submitted_page
 features[variable][] = panels_everywhere_site_template_enabled
+features[variable][] = responsive_menus_mean_menu_css_selectors
 features[variable][] = responsive_menus_mean_menu_media_size
 features[variable][] = responsive_menus_style
 features[variable][] = site_frontpage
