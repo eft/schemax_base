@@ -21,6 +21,12 @@ function schemax_base_strongarm() {
         'custom settings' => 1,
       ),
     ),
+    'node' => array(
+      'featured_content' => array(
+        'label' => 'Featured content',
+        'custom settings' => 1,
+      ),
+    ),
   );
   $export['entity_view_modes'] = $strongarm;
 
@@ -97,6 +103,9 @@ function schemax_base_strongarm() {
       ),
       'token' => array(
         'custom_settings' => FALSE,
+      ),
+      'featured_content' => array(
+        'custom_settings' => TRUE,
       ),
     ),
     'extra_fields' => array(

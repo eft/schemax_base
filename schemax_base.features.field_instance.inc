@@ -88,7 +88,7 @@ function schemax_base_field_default_field_instances() {
         'module' => 'entityreference',
         'settings' => array(
           'links' => 1,
-          'view_mode' => 'teaser',
+          'view_mode' => 'featured_content',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 0,
@@ -129,6 +129,12 @@ function schemax_base_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 2,
       ),
+      'featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -163,7 +169,7 @@ function schemax_base_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'picture',
         'settings' => array(
           'colorbox' => 'schemax_group',
@@ -172,6 +178,16 @@ function schemax_base_field_default_field_instances() {
           'picture_group' => 'schemax_group',
         ),
         'type' => 'picture',
+        'weight' => 0,
+      ),
+      'featured_content' => array(
+        'label' => 'hidden',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'thumbnail',
+        ),
+        'type' => 'image',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -222,6 +238,12 @@ function schemax_base_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'featured_content' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',
