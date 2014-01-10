@@ -116,6 +116,27 @@ function schemax_base_default_page_manager_handlers() {
     $display->panels['content'][1] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
+    $pane->panel = 'footer';
+    $pane->type = 'block';
+    $pane->subtype = 'system-main-menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['footer'][0] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
     $pane->panel = 'help';
     $pane->type = 'page_help';
     $pane->subtype = 'page_help';
@@ -130,10 +151,10 @@ function schemax_base_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['help'][0] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['help'][0] = 'new-5';
     $pane = new stdClass();
-    $pane->pid = 'new-5';
+    $pane->pid = 'new-6';
     $pane->panel = 'highlighted';
     $pane->type = 'pane_messages';
     $pane->subtype = 'pane_messages';
@@ -148,10 +169,10 @@ function schemax_base_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-5'] = $pane;
-    $display->panels['highlighted'][0] = 'new-5';
+    $display->content['new-6'] = $pane;
+    $display->panels['highlighted'][0] = 'new-6';
     $pane = new stdClass();
-    $pane->pid = 'new-6';
+    $pane->pid = 'new-7';
     $pane->panel = 'navigation';
     $pane->type = 'page_primary_links';
     $pane->subtype = 'page_primary_links';
@@ -169,8 +190,8 @@ function schemax_base_default_page_manager_handlers() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-6'] = $pane;
-    $display->panels['navigation'][0] = 'new-6';
+    $display->content['new-7'] = $pane;
+    $display->panels['navigation'][0] = 'new-7';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
