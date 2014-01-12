@@ -13,13 +13,13 @@ function schemax_base_user_default_roles() {
   // Exported role: content author.
   $roles['content author'] = array(
     'name' => 'content author',
-    'weight' => 7,
+    'weight' => 10,
   );
 
   // Exported role: content manager.
   $roles['content manager'] = array(
     'name' => 'content manager',
-    'weight' => 6,
+    'weight' => 15,
   );
 
   return $roles;
