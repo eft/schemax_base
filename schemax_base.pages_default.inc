@@ -192,6 +192,28 @@ function schemax_base_default_page_manager_handlers() {
     $pane->locks = array();
     $display->content['new-7'] = $pane;
     $display->panels['navigation'][0] = 'new-7';
+    $pane = new stdClass();
+    $pane->pid = 'new-8';
+    $pane->panel = 'navigation';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'schemax_user_teams-panel_pane_2';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'logged-in-user',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-8'] = $pane;
+    $display->panels['navigation'][1] = 'new-8';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
