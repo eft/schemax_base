@@ -540,10 +540,10 @@ function schemax_base_default_page_manager_pages() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-15de79e6-7a1f-4ae6-b05c-adca8572b20d';
+    $pane->pid = 'new-d0bf0ced-6328-49a9-81f9-1eb9a34eef11';
     $pane->panel = 'middle';
     $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:45bb3f1f-e743-45c3-8a2d-a84075d3cc94';
+    $pane->subtype = 'uuid:bbe2a470-22f4-4fc1-bb50-eb2930c7d717';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
@@ -557,9 +557,9 @@ function schemax_base_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = '15de79e6-7a1f-4ae6-b05c-adca8572b20d';
-    $display->content['new-15de79e6-7a1f-4ae6-b05c-adca8572b20d'] = $pane;
-    $display->panels['middle'][0] = 'new-15de79e6-7a1f-4ae6-b05c-adca8572b20d';
+    $pane->uuid = 'd0bf0ced-6328-49a9-81f9-1eb9a34eef11';
+    $display->content['new-d0bf0ced-6328-49a9-81f9-1eb9a34eef11'] = $pane;
+    $display->panels['middle'][0] = 'new-d0bf0ced-6328-49a9-81f9-1eb9a34eef11';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;

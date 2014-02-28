@@ -148,6 +148,31 @@ function schemax_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'og_context_negotiation_group_context';
+  $strongarm->value = array(
+    'url' => array(),
+    'node' => array(),
+    'schemax_base' => array(),
+  );
+  $export['og_context_negotiation_group_context'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'og_context_providers_weight_group_context';
+  $strongarm->value = array(
+    'url' => '-5',
+    'node' => '-4',
+    'schemax_base' => '0',
+    'comment' => '0',
+    'user-view' => '0',
+    'user-edit' => '0',
+  );
+  $export['og_context_providers_weight_group_context'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'panels_everywhere_site_template_enabled';
   $strongarm->value = TRUE;
   $export['panels_everywhere_site_template_enabled'] = $strongarm;
