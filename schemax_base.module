@@ -1,14 +1,13 @@
 <?php
+
 /**
  * @file
  * Code for the Schemax Base feature.
  */
-
 include_once 'schemax_base.features.inc';
 
 /**
- * @file
- * Drupal needs this blank file.
+ *
  */
 function schemax_base_entity_info_alter(&$entity_info) {
   $entity_info['fieldable_panels_pane']['bundles']['schemax_base_featured_content'] = array(
@@ -27,13 +26,55 @@ function schemax_base_entity_info_alter(&$entity_info) {
 }
 
 /**
-* Implements hook_preprocess_field().
-*/
+ * Implements hook_preprocess_field().
+ */
 function schemax_base_preprocess_field(&$vars) {
-  if ($vars['element']['#field_name'] == 'field_image'
-      && $vars['element']['#bundle'] == 'fieldable_panels_pane'
-      && $vars['element']['#view_mode'] == 'featured_content')
-    {
-      $vars['classes_array'][] = 'fpp_featured_content';
+  if ($vars['element']['#field_name'] == 'field_image' && $vars['element']['#bundle'] == 'fieldable_panels_pane' && $vars['element']['#view_mode'] == 'featured_content') {
+    $vars['classes_array'][] = 'fpp_featured_content';
+  }
+}
+
+/**
+ * Implements hook_og_context_negotiation_info().
+ */
+function schemax_base_og_context_negotiation_info() {
+  $providers = array();
+
+  $providers['schemax_base'] = array(
+    'name' => t('Schemax Base OG Context Provider'),
+    'description' => t('Select groups according to the PURL prefix.'),
+    'callback' => 'schemax_base_og_context_handler',
+  );
+  return $providers;
+}
+
+/**
+ * OG-context handler.
+ *
+ * Get the group ID based on a Views argument wildcard.
+ */
+function schemax_base_og_context_handler() {
+  $gids = array();
+
+  // Get the router item.
+  $item = menu_get_item();
+
+  // Check if this is a views page.
+  if ($item['page_callback'] !== 'views_page') {
+    return;
+  }
+
+  // Check that user has permission to access the view.
+  if ($item['access'] === FALSE) {
+    return;
+  }
+
+  // Get position of Views argument wildcard in the path.
+  if (is_array($item['load_functions'])) {
+    if ($wildcard_position = array_search('views_arg_load', $item['load_functions'])) {
+      $gids['node'][] = $item['map'][$wildcard_position];
     }
+  }
+
+  return $gids;
 }
