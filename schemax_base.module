@@ -40,11 +40,18 @@ function schemax_base_preprocess_field(&$vars) {
 function schemax_base_og_context_negotiation_info() {
   $providers = array();
 
-  $providers['schemax_base'] = array(
-    'name' => t('Schemax Base OG Context Provider'),
-    'description' => t('Select groups according to the PURL prefix.'),
-    'callback' => 'schemax_base_og_context_handler',
+  $providers['schemax_view'] = array(
+    'name' => t('View'),
+    'description' => t('Select groups if they exist in the argument of a view page display.'),
+    'callback' => 'schemax_base_view_og_context_handler',
   );
+
+  $providers['schemax_availability'] = array(
+    'name' => t('Availability'),
+    'description' => t('Select groups if they exist in the argument of an availability menu router item.'),
+    'callback' => 'schemax_base_availability_og_context_handler',
+  );
+
   return $providers;
 }
 
@@ -53,7 +60,7 @@ function schemax_base_og_context_negotiation_info() {
  *
  * Get the group ID based on a Views argument wildcard.
  */
-function schemax_base_og_context_handler() {
+function schemax_base_view_og_context_handler() {
   $gids = array();
 
   // Get the router item.
@@ -74,6 +81,38 @@ function schemax_base_og_context_handler() {
     if ($wildcard_position = array_search('views_arg_load', $item['load_functions'])) {
       $gids['node'][] = $item['map'][$wildcard_position];
     }
+  }
+
+  return $gids;
+}
+
+/**
+ * OG-context handler.
+ *
+ * Get the group ID based on a Views argument wildcard.
+ */
+function schemax_base_availability_og_context_handler() {
+  $gids = array();
+
+  // Get the router item.
+  $item = menu_get_item();
+
+  // Check if this is a views page.
+  if (isset($item['map'][2])) {
+    if ($item['map'][2] === 'availability') {
+      $gids['node'][] = $item['map'][1];
+    }
+    else {
+      return;
+    }
+  }
+  else {
+    return;
+  }
+
+  // Check that user has permission to access the page.
+  if ($item['access'] === FALSE) {
+    return;
   }
 
   return $gids;

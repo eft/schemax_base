@@ -282,7 +282,7 @@ function schemax_base_default_page_manager_handlers() {
     ),
   );
   $display->cache = array();
-  $display->title = '';
+  $display->title = '%node:og-group-ref';
   $display->uuid = '8d5c740a-9a99-4b5c-8a2c-225bd66b7757';
   $display->content = array();
   $display->panels = array();

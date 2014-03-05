@@ -152,7 +152,8 @@ function schemax_base_strongarm() {
   $strongarm->value = array(
     'url' => array(),
     'node' => array(),
-    'schemax_base' => array(),
+    'schemax_availability' => array(),
+    'schemax_view' => array(),
   );
   $export['og_context_negotiation_group_context'] = $strongarm;
 
@@ -163,10 +164,11 @@ function schemax_base_strongarm() {
   $strongarm->value = array(
     'url' => '-5',
     'node' => '-4',
-    'schemax_base' => '0',
-    'comment' => '0',
-    'user-view' => '0',
+    'schemax_view' => '0',
+    'schemax_availability' => '0',
     'user-edit' => '0',
+    'user-view' => '0',
+    'comment' => '0',
   );
   $export['og_context_providers_weight_group_context'] = $strongarm;
 
