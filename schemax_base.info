@@ -47,7 +47,6 @@ features[field_instance][] = node-page-field_image
 features[field_instance][] = node-page-field_summary
 features[menu_custom][] = schemax-base-menu
 features[menu_custom][] = schemax-sports-menu
-features[menu_custom][] = schemax-team-menu
 features[menu_links][] = schemax-base-menu_home:<front>
 features[menu_links][] = schemax-base-menu_login:menutoken/5316bbc96b643
 features[menu_links][] = schemax-base-menu_register:menutoken/5316b9d7380f2
