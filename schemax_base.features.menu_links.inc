@@ -30,23 +30,18 @@ function schemax_base_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: schemax-base-menu_login:menutoken/5316bbc96b643
-  $menu_links['schemax-base-menu_login:menutoken/5316bbc96b643'] = array(
+  // Exported menu link: schemax-base-menu_login:user/login
+  $menu_links['schemax-base-menu_login:user/login'] = array(
     'menu_name' => 'schemax-base-menu',
-    'link_path' => 'menutoken/5316bbc96b643',
-    'router_path' => 'menutoken/%',
+    'link_path' => 'user/login',
+    'router_path' => 'user',
     'link_title' => 'Login',
     'options' => array(
-      'menu_token_link_path' => 'user/login',
-      'menu_token_data' => array(),
-      'menu_token_options' => array(
-        'clear' => 0,
-      ),
       'attributes' => array(
         'title' => '',
       ),
       'alter' => TRUE,
-      'identifier' => 'schemax-base-menu_login:menutoken/5316bbc96b643',
+      'identifier' => 'schemax-base-menu_login:user/login',
     ),
     'module' => 'menu',
     'hidden' => 0,
@@ -56,23 +51,18 @@ function schemax_base_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: schemax-base-menu_register:menutoken/5316b9d7380f2
-  $menu_links['schemax-base-menu_register:menutoken/5316b9d7380f2'] = array(
+  // Exported menu link: schemax-base-menu_register:user/register
+  $menu_links['schemax-base-menu_register:user/register'] = array(
     'menu_name' => 'schemax-base-menu',
-    'link_path' => 'menutoken/5316b9d7380f2',
-    'router_path' => 'menutoken/%',
+    'link_path' => 'user/register',
+    'router_path' => 'user',
     'link_title' => 'Register',
     'options' => array(
-      'menu_token_link_path' => 'user/register',
-      'menu_token_data' => array(),
-      'menu_token_options' => array(
-        'clear' => 0,
-      ),
       'attributes' => array(
         'title' => '',
       ),
       'alter' => TRUE,
-      'identifier' => 'schemax-base-menu_register:menutoken/5316b9d7380f2',
+      'identifier' => 'schemax-base-menu_register:user/register',
     ),
     'module' => 'menu',
     'hidden' => 0,
