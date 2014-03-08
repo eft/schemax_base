@@ -36,7 +36,6 @@ function schemax_base_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
-
   // Exported menu link: schemax-user-menu_login:menutoken/531aa67c4a4ce
   $menu_links['schemax-user-menu_login:menutoken/531aa67c4a4ce'] = array(
     'menu_name' => 'schemax-user-menu',
@@ -66,7 +65,6 @@ function schemax_base_menu_default_menu_links() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Create account');
-  t('Log in');
   t('Login');
 
 
