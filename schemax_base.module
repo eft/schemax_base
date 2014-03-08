@@ -6,6 +6,14 @@
  */
 include_once 'schemax_base.features.inc';
 
+/*
+ * Move system menu link for /user and /user/logout to schemax-base-menu
+ */
+function schemax_base_menu_alter(&$items) {
+  $items['user']['menu_name'] = 'schemax-user-menu';
+  $items['user/logout']['menu_name'] = 'schemax-user-menu';
+}
+
 /**
  *
  */

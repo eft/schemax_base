@@ -25,7 +25,7 @@ function schemax_base_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
-      'alter' => TRUE,
+      'alter' => FALSE,
       'identifier' => 'schemax-user-menu_create-account:menutoken/53197ab529774',
     ),
     'module' => 'menu',
@@ -36,12 +36,13 @@ function schemax_base_menu_default_menu_links() {
     'weight' => -49,
     'customized' => 1,
   );
-  // Exported menu link: schemax-user-menu_log-in:menutoken/53197a8a0f6a9
-  $menu_links['schemax-user-menu_log-in:menutoken/53197a8a0f6a9'] = array(
+
+  // Exported menu link: schemax-user-menu_login:menutoken/531aa67c4a4ce
+  $menu_links['schemax-user-menu_login:menutoken/531aa67c4a4ce'] = array(
     'menu_name' => 'schemax-user-menu',
-    'link_path' => 'menutoken/53197a8a0f6a9',
+    'link_path' => 'menutoken/531aa67c4a4ce',
     'router_path' => 'menutoken/%',
-    'link_title' => 'Log in',
+    'link_title' => 'Login',
     'options' => array(
       'menu_token_link_path' => 'user/login',
       'menu_token_data' => array(),
@@ -51,22 +52,22 @@ function schemax_base_menu_default_menu_links() {
       'attributes' => array(
         'title' => '',
       ),
-      'alter' => TRUE,
-      'identifier' => 'schemax-user-menu_log-in:menutoken/53197a8a0f6a9',
+      'alter' => FALSE,
+      'identifier' => 'schemax-user-menu_login:menutoken/531aa67c4a4ce',
     ),
     'module' => 'menu',
     'hidden' => 0,
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -50,
+    'weight' => 0,
     'customized' => 1,
   );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Create account');
   t('Log in');
+  t('Login');
 
 
   return $menu_links;

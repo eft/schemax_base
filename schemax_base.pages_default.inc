@@ -100,28 +100,6 @@ function schemax_base_default_page_manager_handlers() {
     $display->content['new-0710e848-a00a-4817-a6b3-1f0caa8ce58c'] = $pane;
     $display->panels['content'][1] = 'new-0710e848-a00a-4817-a6b3-1f0caa8ce58c';
     $pane = new stdClass();
-    $pane->pid = 'new-3bf80c92-a5f3-4840-b375-3452a40237de';
-    $pane->panel = 'header';
-    $pane->type = 'block';
-    $pane->subtype = 'menu-schemax-base-menu';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '3bf80c92-a5f3-4840-b375-3452a40237de';
-    $display->content['new-3bf80c92-a5f3-4840-b375-3452a40237de'] = $pane;
-    $display->panels['header'][0] = 'new-3bf80c92-a5f3-4840-b375-3452a40237de';
-    $pane = new stdClass();
     $pane->pid = 'new-ddb3c287-9e82-4f23-b549-a0a872b782ee';
     $pane->panel = 'header';
     $pane->type = 'block';
@@ -138,11 +116,11 @@ function schemax_base_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 1;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = 'ddb3c287-9e82-4f23-b549-a0a872b782ee';
     $display->content['new-ddb3c287-9e82-4f23-b549-a0a872b782ee'] = $pane;
-    $display->panels['header'][1] = 'new-ddb3c287-9e82-4f23-b549-a0a872b782ee';
+    $display->panels['header'][0] = 'new-ddb3c287-9e82-4f23-b549-a0a872b782ee';
     $pane = new stdClass();
     $pane->pid = 'new-f0266333-3a0a-4554-927c-9b2d95c0c668';
     $pane->panel = 'help';
@@ -313,28 +291,6 @@ function schemax_base_default_page_manager_handlers() {
     $display->content['new-0710e848-a00a-4817-a6b3-1f0caa8ce58c'] = $pane;
     $display->panels['content'][0] = 'new-0710e848-a00a-4817-a6b3-1f0caa8ce58c';
     $pane = new stdClass();
-    $pane->pid = 'new-0288853b-b32e-4954-9c1f-7934dfcf111e';
-    $pane->panel = 'header';
-    $pane->type = 'block';
-    $pane->subtype = 'menu-schemax-base-menu';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = '0288853b-b32e-4954-9c1f-7934dfcf111e';
-    $display->content['new-0288853b-b32e-4954-9c1f-7934dfcf111e'] = $pane;
-    $display->panels['header'][0] = 'new-0288853b-b32e-4954-9c1f-7934dfcf111e';
-    $pane = new stdClass();
     $pane->pid = 'new-f0266333-3a0a-4554-927c-9b2d95c0c668';
     $pane->panel = 'help';
     $pane->type = 'page_help';
@@ -493,6 +449,28 @@ function schemax_base_default_page_manager_handlers() {
     $pane->uuid = 'd9208420-3b44-4c70-8014-3617bae7aad6';
     $display->content['new-d9208420-3b44-4c70-8014-3617bae7aad6'] = $pane;
     $display->panels['navigation'][4] = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
+    $pane = new stdClass();
+    $pane->pid = 'new-2e150d8f-05eb-416a-b063-594091a092cf';
+    $pane->panel = 'navigation';
+    $pane->type = 'block';
+    $pane->subtype = 'menu-schemax-user-menu';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 5;
+    $pane->locks = array();
+    $pane->uuid = '2e150d8f-05eb-416a-b063-594091a092cf';
+    $display->content['new-2e150d8f-05eb-416a-b063-594091a092cf'] = $pane;
+    $display->panels['navigation'][5] = 'new-2e150d8f-05eb-416a-b063-594091a092cf';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
   $handler->conf['display'] = $display;
@@ -553,45 +531,7 @@ function schemax_base_default_page_manager_pages() {
     'contexts' => array(),
     'relationships' => array(),
   );
-  $display = new panels_display();
-  $display->layout = 'onecol';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'middle' => NULL,
-      'default' => NULL,
-    ),
-    'style' => 'default',
-  );
-  $display->cache = array();
-  $display->title = 'fasd';
-  $display->uuid = '8af369b3-9ee6-4a3a-a54d-dbafe58abf78';
-  $display->content = array();
-  $display->panels = array();
-    $pane = new stdClass();
-    $pane->pid = 'new-c353f527-46fb-48a0-971a-9f10d2a88c35';
-    $pane->panel = 'middle';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:e6e37dbb-2ffe-485d-bb51-cf9610cf1a18';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'featured_content',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'c353f527-46fb-48a0-971a-9f10d2a88c35';
-    $display->content['new-c353f527-46fb-48a0-971a-9f10d2a88c35'] = $pane;
-    $display->panels['middle'][0] = 'new-c353f527-46fb-48a0-971a-9f10d2a88c35';
-  $display->hide_title = PANELS_TITLE_NONE;
-  $display->title_pane = '0';
-  $handler->conf['display'] = $display;
+
   $page->default_handlers[$handler->name] = $handler;
   $pages['front_page'] = $page;
 
