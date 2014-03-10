@@ -45,6 +45,7 @@ features[field_instance][] = fieldable_panels_pane-schemax_base_featured_content
 features[field_instance][] = node-page-body
 features[field_instance][] = node-page-field_image
 features[field_instance][] = node-page-field_summary
+features[image][] = very_small
 features[menu_custom][] = schemax-sports-menu
 features[menu_custom][] = schemax-user-menu
 features[menu_links][] = schemax-user-menu_login:user/login
