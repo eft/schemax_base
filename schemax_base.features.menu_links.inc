@@ -10,7 +10,7 @@
 function schemax_base_menu_default_menu_links() {
   $menu_links = array();
 
-  // Exported menu link: schemax-base-menu_login:user/login
+  // Exported menu link: schemax-user-menu_login:user/login
   $menu_links['schemax-user-menu_login:user/login'] = array(
     'menu_name' => 'schemax-user-menu',
     'link_path' => 'user/login',
