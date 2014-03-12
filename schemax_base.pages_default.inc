@@ -112,6 +112,29 @@ function schemax_base_default_page_manager_handlers() {
     $display->content['new-ddb3c287-9e82-4f23-b549-a0a872b782ee'] = $pane;
     $display->panels['branding'][2] = 'new-ddb3c287-9e82-4f23-b549-a0a872b782ee';
     $pane = new stdClass();
+    $pane->pid = 'new-a4c28a32-c527-4f7c-9294-c83aec089cea';
+    $pane->panel = 'branding';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'schemax_user_teams-panel_pane_my_teams_short';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'logged-in-user',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = 'a4c28a32-c527-4f7c-9294-c83aec089cea';
+    $display->content['new-a4c28a32-c527-4f7c-9294-c83aec089cea'] = $pane;
+    $display->panels['branding'][3] = 'new-a4c28a32-c527-4f7c-9294-c83aec089cea';
+    $pane = new stdClass();
     $pane->pid = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
     $pane->panel = 'content';
     $pane->type = 'page_title';
@@ -219,29 +242,6 @@ function schemax_base_default_page_manager_handlers() {
     $pane->uuid = '92f02fba-4386-4ab6-9b4e-b223fd3e15ae';
     $display->content['new-92f02fba-4386-4ab6-9b4e-b223fd3e15ae'] = $pane;
     $display->panels['navigation'][0] = 'new-92f02fba-4386-4ab6-9b4e-b223fd3e15ae';
-    $pane = new stdClass();
-    $pane->pid = 'new-8a394fc2-fa9c-485c-ad11-2e44206db9fd';
-    $pane->panel = 'navigation';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'schemax_user_teams-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'logged-in-user',
-      ),
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $pane->uuid = '8a394fc2-fa9c-485c-ad11-2e44206db9fd';
-    $display->content['new-8a394fc2-fa9c-485c-ad11-2e44206db9fd'] = $pane;
-    $display->panels['navigation'][1] = 'new-8a394fc2-fa9c-485c-ad11-2e44206db9fd';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
@@ -366,6 +366,29 @@ function schemax_base_default_page_manager_handlers() {
     $display->content['new-2e150d8f-05eb-416a-b063-594091a092cf'] = $pane;
     $display->panels['branding'][2] = 'new-2e150d8f-05eb-416a-b063-594091a092cf';
     $pane = new stdClass();
+    $pane->pid = 'new-2eff8627-93e4-4af8-8c30-bc67ae5c4fab';
+    $pane->panel = 'branding';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'schemax_user_teams-panel_pane_my_teams_short';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'logged-in-user',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $pane->locks = array();
+    $pane->uuid = '2eff8627-93e4-4af8-8c30-bc67ae5c4fab';
+    $display->content['new-2eff8627-93e4-4af8-8c30-bc67ae5c4fab'] = $pane;
+    $display->panels['branding'][3] = 'new-2eff8627-93e4-4af8-8c30-bc67ae5c4fab';
+    $pane = new stdClass();
     $pane->pid = 'new-0710e848-a00a-4817-a6b3-1f0caa8ce58c';
     $pane->panel = 'content';
     $pane->type = 'page_content';
@@ -471,29 +494,6 @@ function schemax_base_default_page_manager_handlers() {
     $display->content['new-81e4f51b-a87b-424d-9f15-b69802fa8c0d'] = $pane;
     $display->panels['navigation'][1] = 'new-81e4f51b-a87b-424d-9f15-b69802fa8c0d';
     $pane = new stdClass();
-    $pane->pid = 'new-8a394fc2-fa9c-485c-ad11-2e44206db9fd';
-    $pane->panel = 'navigation';
-    $pane->type = 'views_panes';
-    $pane->subtype = 'schemax_user_teams-panel_pane_2';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'logged-in-user',
-      ),
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = array();
-    $pane->uuid = '8a394fc2-fa9c-485c-ad11-2e44206db9fd';
-    $display->content['new-8a394fc2-fa9c-485c-ad11-2e44206db9fd'] = $pane;
-    $display->panels['navigation'][2] = 'new-8a394fc2-fa9c-485c-ad11-2e44206db9fd';
-    $pane = new stdClass();
     $pane->pid = 'new-ec6e17b0-de0d-4e84-8e88-c9e13c3f6491';
     $pane->panel = 'navigation';
     $pane->type = 'node_create_links';
@@ -517,11 +517,11 @@ function schemax_base_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 3;
+    $pane->position = 2;
     $pane->locks = array();
     $pane->uuid = 'ec6e17b0-de0d-4e84-8e88-c9e13c3f6491';
     $display->content['new-ec6e17b0-de0d-4e84-8e88-c9e13c3f6491'] = $pane;
-    $display->panels['navigation'][3] = 'new-ec6e17b0-de0d-4e84-8e88-c9e13c3f6491';
+    $display->panels['navigation'][2] = 'new-ec6e17b0-de0d-4e84-8e88-c9e13c3f6491';
     $pane = new stdClass();
     $pane->pid = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
     $pane->panel = 'navigation';
@@ -542,11 +542,11 @@ function schemax_base_default_page_manager_handlers() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 4;
+    $pane->position = 3;
     $pane->locks = array();
     $pane->uuid = 'd9208420-3b44-4c70-8014-3617bae7aad6';
     $display->content['new-d9208420-3b44-4c70-8014-3617bae7aad6'] = $pane;
-    $display->panels['navigation'][4] = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
+    $display->panels['navigation'][3] = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
   $display->hide_title = PANELS_TITLE_PANE;
   $display->title_pane = 'new-d9208420-3b44-4c70-8014-3617bae7aad6';
   $handler->conf['display'] = $display;
