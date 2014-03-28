@@ -17,13 +17,13 @@ function schemax_base_default_picture_mapping() {
   $picture_mapping->breakpoint_group = 'schemax_group';
   $picture_mapping->mapping = array(
     'custom.user.mobile' => array(
-      '1x' => 'thumbnail',
+      '1x' => 'very_small',
     ),
     'custom.user.narrow' => array(
-      '1x' => 'medium',
+      '1x' => 'thumbnail',
     ),
     'custom.user.wide' => array(
-      '1x' => 'large',
+      '1x' => 'medium',
     ),
   );
   $export['schemax_group'] = $picture_mapping;
