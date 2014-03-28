@@ -30,7 +30,7 @@ function schemax_base_default_breakpoints() {
   $breakpoint->api_version = 1;
   $breakpoint->machine_name = 'custom.user.narrow';
   $breakpoint->name = 'narrow';
-  $breakpoint->breakpoint = 'min-width: 560px)';
+  $breakpoint->breakpoint = '(min-width: 560px)';
   $breakpoint->source = 'user';
   $breakpoint->source_type = 'custom';
   $breakpoint->status = 1;
