@@ -52,6 +52,7 @@ features[menu_links][] = schemax-user-menu_login:user/login
 features[menu_links][] = schemax-user-menu_register:user/register
 features[page_manager_handlers][] = site_template_panel_context
 features[page_manager_handlers][] = site_template_panel_context_2
+features[page_manager_handlers][] = site_template_panel_context_3
 features[page_manager_pages][] = front_page
 features[picture_mapping][] = schemax_group
 features[user_role][] = content author
