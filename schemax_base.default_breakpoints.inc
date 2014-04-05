@@ -22,7 +22,6 @@ function schemax_base_default_breakpoints() {
   $breakpoint->weight = 0;
   $breakpoint->multipliers = array(
     '1x' => '1x',
-    '2x' => '2x',
   );
   $export['custom.user.mobile'] = $breakpoint;
 
