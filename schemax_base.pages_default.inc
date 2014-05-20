@@ -136,6 +136,28 @@ function schemax_base_default_page_manager_handlers() {
     $display->content['new-a4c28a32-c527-4f7c-9294-c83aec089cea'] = $pane;
     $display->panels['branding'][3] = 'new-a4c28a32-c527-4f7c-9294-c83aec089cea';
     $pane = new stdClass();
+    $pane->pid = 'new-c06bbc15-9787-4502-b4b9-16cfbbd48f18';
+    $pane->panel = 'branding';
+    $pane->type = 'block';
+    $pane->subtype = 'search-form';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 4;
+    $pane->locks = array();
+    $pane->uuid = 'c06bbc15-9787-4502-b4b9-16cfbbd48f18';
+    $display->content['new-c06bbc15-9787-4502-b4b9-16cfbbd48f18'] = $pane;
+    $display->panels['branding'][4] = 'new-c06bbc15-9787-4502-b4b9-16cfbbd48f18';
+    $pane = new stdClass();
     $pane->pid = 'new-2174d2a4-4585-43c0-b8b7-51fa518563c9';
     $pane->panel = 'content';
     $pane->type = 'pane_messages';
@@ -959,10 +981,10 @@ function schemax_base_default_page_manager_pages() {
     $display->content['new-a0486b5b-dd5d-494d-8e37-c96e927577c2'] = $pane;
     $display->panels['left'][0] = 'new-a0486b5b-dd5d-494d-8e37-c96e927577c2';
     $pane = new stdClass();
-    $pane->pid = 'new-cd5daa41-23e1-4328-a8ad-c7ab67c74443';
+    $pane->pid = 'new-9b2cea8e-b3c7-423f-bb2a-578a4a700542';
     $pane->panel = 'middle';
     $pane->type = 'views_panes';
-    $pane->subtype = 'hero_banner-panel_pane_hero_banner';
+    $pane->subtype = 'schemax_slide_show-panel_pane_1';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array();
@@ -974,9 +996,9 @@ function schemax_base_default_page_manager_pages() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $pane->uuid = 'cd5daa41-23e1-4328-a8ad-c7ab67c74443';
-    $display->content['new-cd5daa41-23e1-4328-a8ad-c7ab67c74443'] = $pane;
-    $display->panels['middle'][0] = 'new-cd5daa41-23e1-4328-a8ad-c7ab67c74443';
+    $pane->uuid = '9b2cea8e-b3c7-423f-bb2a-578a4a700542';
+    $display->content['new-9b2cea8e-b3c7-423f-bb2a-578a4a700542'] = $pane;
+    $display->panels['middle'][0] = 'new-9b2cea8e-b3c7-423f-bb2a-578a4a700542';
     $pane = new stdClass();
     $pane->pid = 'new-fb60228b-e7e0-4804-a940-94be1dcf63a8';
     $pane->panel = 'middle';
@@ -1007,7 +1029,7 @@ function schemax_base_default_page_manager_pages() {
     $display->panels['middle'][1] = 'new-fb60228b-e7e0-4804-a940-94be1dcf63a8';
     $pane = new stdClass();
     $pane->pid = 'new-92f1e904-c899-40f7-ac1d-1f018722a5e1';
-    $pane->panel = 'middle';
+    $pane->panel = 'right';
     $pane->type = 'views_panes';
     $pane->subtype = 'featured_products-panel_pane_1';
     $pane->shown = TRUE;
@@ -1019,32 +1041,11 @@ function schemax_base_default_page_manager_pages() {
     );
     $pane->css = array();
     $pane->extras = array();
-    $pane->position = 2;
+    $pane->position = 0;
     $pane->locks = array();
     $pane->uuid = '92f1e904-c899-40f7-ac1d-1f018722a5e1';
     $display->content['new-92f1e904-c899-40f7-ac1d-1f018722a5e1'] = $pane;
-    $display->panels['middle'][2] = 'new-92f1e904-c899-40f7-ac1d-1f018722a5e1';
-    $pane = new stdClass();
-    $pane->pid = 'new-a8a11218-fc96-44e9-8b4e-d6d4fae2a926';
-    $pane->panel = 'right';
-    $pane->type = 'fieldable_panels_pane';
-    $pane->subtype = 'uuid:9b55450f-12a0-4d73-b113-dbf042c2e2c9';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'view_mode' => 'featured_content',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = array();
-    $pane->uuid = 'a8a11218-fc96-44e9-8b4e-d6d4fae2a926';
-    $display->content['new-a8a11218-fc96-44e9-8b4e-d6d4fae2a926'] = $pane;
-    $display->panels['right'][0] = 'new-a8a11218-fc96-44e9-8b4e-d6d4fae2a926';
+    $display->panels['right'][0] = 'new-92f1e904-c899-40f7-ac1d-1f018722a5e1';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $handler->conf['display'] = $display;
